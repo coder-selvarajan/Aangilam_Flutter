@@ -1,4 +1,5 @@
 import 'package:aangilam/constants.dart';
+import 'package:aangilam/screens/dictionary/dictionary-view.dart';
 import 'package:aangilam/screens/home/resource_strip.dart';
 import 'package:flutter/material.dart';
 import 'app_bar.dart';
@@ -26,7 +27,10 @@ class HomeView extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               child: InkWell(
                 onTap: () {
-                  print('tapped search bar');
+                  Navigator.pushNamed(
+                    context,
+                    '/dictionary',
+                  );
                 },
                 child: Container(
                   height: 40.0,
