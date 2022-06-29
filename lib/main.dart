@@ -1,4 +1,5 @@
 import 'package:aangilam/constants.dart';
+import 'package:aangilam/screens/dictionary/OwlbotDictionary.dart';
 import 'package:aangilam/screens/dictionary/dictionary-view.dart';
 import 'package:aangilam/screens/home/home-view.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ class AangilamApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeView(),
         '/dictionary': (context) => const DictionaryView(),
+        '/owlbot': (context) => OwlbotView(),
       },
     );
   }
